@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home page/css/style navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./home page/css/style title.css">
+    <link rel="stylesheet" href="./home page/css/style popular.css">
+    <link rel="stylesheet" href="./home page/css/style new song.css">
+    <link rel="stylesheet" href="./home page/css/style player musicbar.css">
+    <link rel="stylesheet" href="./home page/css/style short gallery.css">
+    <title>AirMusic</title>
+</head>
+
+<body>
+    <!-- -----------------------------------PC-NAV---------------------- -->
+    <nav class="padding">
+        <div class="con-nav-logo">
+            <div class="logo">
+                <h3 translate="no"><span>Air</span>Music</h3>
+            </div>
+        </div>
+        <div class="con-nav-list">
+            <ul class="navigation">
+                <li class="nav-list"><a href="#">Home</a></li>
+                <li class="nav-list"><a href="#">Marketplace</a></li>
+                <li class="nav-list"><a href="#">Search</a></li>
+                <li class="nav-list"><a href="#">Sign up</a></li>
+            </ul>
+            <div class="wallet button">
+                My Wallet
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- ---------------------------------MOB-NAV------------------------ -->
+    <ul class="mobile-menu">
+        <div class="boll"></div>
+        <li id="listSatu" class="list-mobile">
+            <div class="point">
+                <i class="icon-mob fas fa-home up"></i>
+                <span class="menu-font font-up">Home</span>
+            </div>
+        </li>
+        <li id="listDua" class="list-mobile">
+            <div class="point">
+                <i class="icon-mob fab fa-shopify"></i>
+                <span class="menu-font">Marketplace</span>
+            </div>
+        </li>
+
+        <li id="listTiga" class="list-mobile">
+            <div class="point">
+                <i class="icon-mob fas fa-search"></i>
+                <span class="menu-font">Search</span>
+            </div>
+        </li>
+
+        <li id="listEmpat" class="list-mobile">
+            <div class="point">
+                <i class="icon-mob fas fa-wallet"></i>
+                <span class="menu-font">My wallet</span>
+            </div>
+        </li>
+
+
+    </ul>
+    <!-- ------------------------MUSIC BAR-------------------------------- -->
+    <section class="music-bar">
+        <div class="music-bar-btn">
+            <ion-icon name="chevron-down-outline"></ion-icon>
+        </div>
+        <div class="song-playing">
+            <img class="img-song-player" src="./images/imgSec/song popular 1.jpg" alt="">
+            <div class="font">
+                <h4 class="popular-title">Discover</h4>
+                <p class="popular-name">Arwicial Vibes</p>
+            </div>
+            <i class="far fa-heart"></i>
+        </div>
+
+        <div class="music-proses">
+            <div class="control-pro top-control">
+                <ion-icon id="shuffle" class="control-tengah" name="shuffle-outline"></ion-icon>
+                <i id="preview" class="fas fa-step-backward"></i>
+                <div id="playPouse" class="play-pouse"><i class="fas fa-play"></i></div>
+                <i id="next" class="fas fa-step-forward"></i>
+                <ion-icon id="repeat" class="control-tengah" name="repeat-outline"></ion-icon>
+            </div>
+            <div class="control-pro bottom-control">
+                <span class="curent-time-song">00:00</span>
+                <input class="range-song" type="range" min="0" max="100" step="1" value="0" id="song-range">
+                <span class="duration-song">00:00</span>
+            </div>
+            <audio class="audioMusicBar" src="" hidden></audio>
+        </div>
+        <div class="music-control">
+            <ion-icon name="mic-outline"></ion-icon>
+            <ion-icon name="volume-high-outline"></ion-icon>
+            <input class="volume-song" type="range" id="volume-song" value="100" min="0" max="100">
+        </div>
+    </section>
+    <!-- ----------------------------HERO-------------------------------- -->
+    <section class="container con-title padding">
+        <div class="img-sec">
+            <div class="img-box">
+                <img src="./images/imgSec/title.jpg" alt="">
+                <div class="squere"></div>
+            </div>
+        </div>
+        <div class="text-sec">
+            <div class="text-box">
+                <h1>Help you to sell your music</h1>
+                <p>create your first music NFTs with NFT market for musicians</p>
+                <div class="button btn-title">
+                    View Drops
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------------------------------POPULAR-SONG-------------------------- -->
+    <section class="popular-song padding">
+        <div class="font-popular">
+            <h1 class="title-h1">The NFT Marketplace for Music</h1>
+            <p class="desc-p">AirMusic is marketplace for creator and fans. Our NFTs unlocj content and experiances with
+                your favorite
+                creators. Own music, acsess exclusive content, and engage with creators in ne ways</p>
+        </div>
+        <div class="song-pupolar">
+            <h1 class="title-side-h1">Featured Drops</h1>
+            <div class="cards-populer-mob">
+                <div class="card-populer-mob">
+                    <audio class="popAudioMob popAudioMob0" src="./song/Adventures.mp3"></audio>
+                    <img src="./images/imgSec/song popular 0.jpg" alt="">
+                    <div class="card-font-mob">
+                        <h4>Adventures</h4>
+                        <p>Takeshimure</p>
+                    </div>
+                    <i class="fas fa-play play-pouse-mob 0"></i>
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="card-populer-mob">
+                    <audio class="popAudioMob popAudioMob1" src="./song/Different Heaven.mp3"></audio>
+                    <img src="./images/imgSec/song popular 1.jpg" alt="">
+                    <div class="card-font-mob">
+                        <h4>Different Heaven</h4>
+                        <p>Angelica</p>
+                    </div>
+                    <i class="fas fa-play play-pouse-mob 1"></i>
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="card-populer-mob">
+                    <audio class="popAudioMob popAudioMob2" src="./song/Lights  Sappheiros.mp3"></audio>
+                    <img src="./images/imgSec/song popular 2.jpg" alt="">
+                    <div class="card-font-mob">
+                        <h4>Lights Sappheiros</h4>
+                        <p>Sizuru</p>
+                    </div>
+                    <i class="fas fa-play play-pouse-mob 2"></i>
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="cards-popular">
+                <div class="card-popular">
+                    <div class="cover">
+                        <div class="duration">
+                            <p class="desc-p">
+                                <ion-icon name="hourglass-outline"></ion-icon>2h 40m 30s
+                            </p>
+                        </div>
+                        <div class="title">
+                            <div class="profile">
+                                <h4 class="card-title">Adventures</h4>
+                                <div class="img">
+                                    <img src="./images/imgSec/singer 1.jpg" alt="">
+                                    <p class="desc-p">Takeshimure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="play-button a 0 nol">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+
+                    <img src="./images/imgSec/song popular 0.jpg" alt="">
+                    <audio class="popAudio popAudio0" src="./song/Adventures.mp3"></audio>
+                </div>
+                <div class="card-popular">
+                    <div class="cover">
+                        <div class="duration">
+                            <p class="desc-p">
+                                <ion-icon name="hourglass-outline"></ion-icon>2h 40m 30s
+                            </p>
+                        </div>
+                        <div class="title">
+
+                            <div class="profile">
+                                <h4 class="card-title">Different Heaven</h4>
+                                <div class="img">
+                                    <img src="./images/imgSec/singer 2.jpg" alt="">
+                                    <p class="desc-p">Angelica</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="play-button 1 satu">
+                        <i class="fas fa-play-circle"></i>
+
+                    </div>
+
+                    <img src="./images/imgSec/song popular 1.jpg" alt="">
+                    <audio class="popAudio popAudio1" src="./song/Different Heaven.mp3"></audio>
+                </div>
+                <div class="card-popular">
+                    <div class="cover">
+                        <div class="duration">
+                            <p class="desc-p">
+                                <ion-icon name="hourglass-outline"></ion-icon>2h 40m 30s
+                            </p>
+                        </div>
+                        <div class="title">
+                            <div class="profile">
+                                <h4 class="card-title">Lights Sappheiros</h4>
+                                <div class="img">
+                                    <img src="./images/imgSec/singer 3.jpg" alt="">
+                                    <p class="desc-p">Sizuru</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="play-button 2 dua">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+
+                    <img src="./images/imgSec/song popular 2.jpg" alt="">
+                    <audio class="popAudio popAudio2" src="./song/Lights  Sappheiros.mp3"></audio>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- -------------------------------NEW SONG --------------------------- -->
+    <section class="newSong padding">
+        <div class="container-new-song">
+            <div class="song-name">
+                <div class="img-box">
+                    <img src="./images/imgNewSong/ss.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>SIGNAL <br> <span>Strike The Blood ED 2</span></h3>
+                    <div class="current">
+                        <div class="current-ch">
+                            <h5>Current Bid</h5>
+                            <p>Rp.150.284</p>
+                        </div>
+                        <div class="current-ch">
+                            <h5>Auction Ending in</h5>
+                            <p>07:32:00</p>
+                        </div>
+                    </div>
+                    <div class="share">
+                        <div class="circle">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="circle">
+                            <ion-icon name="share-social-outline"></ion-icon>
+                        </div>
+                        <div class="button">Place a Bid</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sing-name">
+                <div class="indentitas">
+                    <div class="img-singer">
+                        <img src="./images/imgNewSong/singer1.jpg" alt="">
+                    </div>
+                    <h4>Wakeshima Kanon</h4>
+                    <p>@know_insta</p>
+                    <div class="share">
+                        <div class="circle">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="circle">
+                            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                        </div>
+                        <div class="circle">
+                            <ion-icon name="share-social-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="value">
+                    <div class="money-logo">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="text-money">
+                        <h5>US Dollar</h5>
+                        <p>$10.59</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------------------- SHORT GALLERY ----------------------------- -->
+    <section class="short-gallery padding">
+        <!-- title -->
+        <div class="gallery-title">
+            <h1>Your <br> Collection</h1>
+        </div>
+
+        <!-- pilihan -->
+        <div class="container-filter">
+            <div class="filter-list">
+                <div id="All" class="genre filter all">All</div>
+                <div id="Pop" class="genre filter pop">Pop</div>
+                <div id="Rock" class="genre filter rock">Rock</div>
+                <div id="Rap" class="genre filter rap">Rap</div>
+                <div class="filter add">Add category <span><i class="fas fa-chevron-down"></i></span>
+                    <ul class="drop-down-category">
+                        <li id="Classic" class="genre list-drop-down classic">Classic</li>
+                        <li id="Jazz" class="genre list-drop-down jazz">Jazz</li>
+                        <li id="Anime" class="genre list-drop-down anime">Anime</li>
+                        <li class="list-drop-down">++</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="view-all">
+                <div class="button viewAll" id="view-all">View All</div>
+            </div>
+        </div>
+
+        <!-- gallery  -->
+        <div class="gallery-songs">
+
+
+        </div>
+
+    </section>
+    <script src="./home page/js/style app.js"></script>
+    <script src="./home page/js/music.js"></script>
+    <script src="./home page/js/music-mob.js"></script>
+    <script src="./home page/js/gallery.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
