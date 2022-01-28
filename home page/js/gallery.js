@@ -71,7 +71,7 @@ let songs = [
 
     {
         name: "Sparkle",
-        image: "./images/imgGallery/Sparkle.png",
+        image: "./images/imgGallery/Sparkle.jpg",
         song: "./song/Sparkle.mp3",
         linkOri: "https://youtu.be/-pHfPJGatgE",
         price: "1,320",
@@ -303,6 +303,15 @@ class Gallery {
                     }
                 }, 0);
             }
+            if (window.innerWidth <= 375) {
+                setTimeout(() => {
+                    if (cards.length > 5) {
+                        for (let i = 4; i < card.length; i++) {
+                            cards[i].style.display = 'none';
+                        }
+                    }
+                }, 0);
+            }
         });
 
 
@@ -338,6 +347,16 @@ class Gallery {
                         setTimeout(() => {
                             if (cards.length > 7) {
                                 for (let i = 6; i < cards.length; i++) {
+                                    cards[i].style.display = 'none';
+                                }
+                            }
+                        }, 0);
+                    }
+
+                    if (window.innerWidth <= 375) {
+                        setTimeout(() => {
+                            if (cards.length > 5) {
+                                for (let i = 4; i < cards.length; i++) {
                                     cards[i].style.display = 'none';
                                 }
                             }

@@ -13,7 +13,6 @@ body {
     overflow-x: hidden !important;
     width: 100%;
     transform: none !important;
-    min-height: 1300px;
 }
 
 body::-webkit-scrollbar {

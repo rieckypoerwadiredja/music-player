@@ -1,12 +1,8 @@
-body {
-    height: 4000px;
-}
-
 .short-gallery {
     position: relative;
     width: 100%;
     height: 700px;
-    background-color: red;
+    /* background-color: red; */
     margin-top: 130px;
 }
 
@@ -113,6 +109,10 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+}
+
+.drop-down-category.rap {
+    display: none;
 }
 
 .drop-down-category.active {
@@ -293,6 +293,11 @@ body {
 }
 
 @media (max-width:768px) {
+    .gallery-title h1 {
+        font-weight: 500 !important;
+        font-size: 25px;
+    }
+
     .container-filter .filter {
         width: 60px;
         height: 45%;
@@ -312,14 +317,362 @@ body {
         padding: 0;
     }
 
+    /* dropdown */
+
+    .drop-down-category .list-drop-down {
+        width: 100%;
+        height: 30px;
+        display: grid;
+        place-items: center;
+        font-size: 9px;
+    }
+
 }
 
 @media (max-width:650px) {
+    .gallery-title h1 {
+        font-weight: 500 !important;
+        font-size: 23px;
+    }
+
     .gallery-songs {
         padding: 0 2%;
         margin-top: 3%;
         grid-template-columns: repeat(3, minmax(100px, 1fr));
         grid-template-rows: repeat(3, minmax(calc(50% - 20px), calc(50% - 10px)));
         gap: 10px;
+    }
+
+    .content-item h4 {
+        font-size: 7px;
+        color: rgba(255, 255, 255, 0.750);
+        font-weight: 450;
+        /* background-color: burlywood; */
+        height: 20%;
+    }
+
+    .content-item h3 {
+        font-size: 8.5px;
+        color: #fff;
+        font-weight: 500;
+        /* background-color: cyan; */
+        height: 30%;
+        margin: 2% 0 4% 0
+    }
+
+    /* view */
+    .content-item .control .view {
+        position: relative;
+        width: 40%;
+        height: 100%;
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 9px;
+        color: #fff;
+    }
+
+    .view .bulat {
+        background-color: #023f82;
+    }
+
+    .view p {
+        margin-left: 10%;
+    }
+
+    .content-item .control .view ion-icon {
+        font-size: 8px;
+        font-weight: 300;
+        color: #fff;
+    }
+
+    .share-song .bulat {
+        background-color: #43464e;
+        font-size: 8px;
+        color: rgba(255, 255, 255, 0.795);
+    }
+
+    .content-item .bulat {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+    }
+
+    /* filter */
+    .container-filter .filter {
+        width: 50px;
+        height: 35%;
+        font-size: 8px;
+    }
+
+    .container-filter .filter.add {
+        width: 90px;
+        font-size: 8px;
+        padding: 0 1%;
+    }
+
+    .view-all .viewAll {
+        width: 70%;
+        height: 35%;
+        font-size: 9px;
+        padding: 0;
+    }
+
+    /* dropdown */
+    .drop-down-category .list-drop-down {
+        width: 100%;
+        height: 30px;
+        display: grid;
+        place-items: center;
+        font-size: 9px;
+    }
+
+}
+
+@media (max-width:550px) {
+
+    /* filter */
+    .container-filter .filter {
+        width: 40px;
+        height: 34%;
+        font-size: 7px;
+    }
+
+    .container-filter .filter.add {
+        width: 90px;
+        font-size: 7px;
+        padding: 0 1%;
+    }
+
+    .view-all .viewAll {
+        width: 80%;
+        height: 40%;
+        font-size: 8px;
+        padding: 0;
+    }
+
+    /* dropdown */
+    .drop-down-category .list-drop-down {
+        width: 100%;
+        height: 25px;
+        display: grid;
+        place-items: center;
+        font-size: 7px;
+    }
+
+    /* card */
+    .card-item {
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    .short-gallery {
+        position: relative;
+        width: 100%;
+        height: 650px;
+        /* background-color: red; */
+        margin-top: 130px;
+    }
+}
+
+@media (max-width:500px) {
+    .short-gallery {
+        height: 520px;
+        margin-top: 100px;
+    }
+
+
+    .gallery-title h1 {
+        font-weight: 500 !important;
+        font-size: 20px;
+    }
+
+    /* card */
+    .card-item {
+        padding: 6px;
+        border-radius: 10px;
+    }
+
+    /* view */
+    .content-item .control .view {
+        position: relative;
+        width: 40%;
+        height: 100%;
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 6px;
+        color: #fff;
+    }
+
+    .view .bulat {
+        background-color: #023f82;
+    }
+
+    .view p {
+        margin-left: 10%;
+    }
+
+    .content-item .control .view ion-icon {
+        font-size: 6px;
+        font-weight: 300;
+        color: #fff;
+    }
+
+    .share-song .bulat {
+        background-color: #43464e;
+        font-size: 6px;
+        color: rgba(255, 255, 255, 0.795);
+    }
+
+    .content-item .bulat {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+    }
+
+    .content-item h4 {
+        font-size: 6px;
+        color: rgba(255, 255, 255, 0.750);
+        font-weight: 450;
+        /* background-color: burlywood; */
+        height: 20%;
+    }
+
+    .content-item h3 {
+        font-size: 6px;
+        color: #fff;
+        font-weight: 500;
+        /* background-color: cyan; */
+        height: 30%;
+        margin: 2% 0 4% 0
+    }
+
+    /* filter */
+    .container-filter .filter {
+        width: 36px;
+        height: 34%;
+        font-size: 7px;
+    }
+}
+
+@media (max-width:425px) {
+
+    /* filter */
+    .container-filter .filter-list {
+
+        padding-right: 10%;
+    }
+
+    .container-filter .filter {
+        width: 35px;
+        height: 34%;
+        font-size: 7px;
+    }
+
+
+}
+
+@media (max-width:375px) {
+
+    /* filter */
+    .container-filter .filter-list {
+
+        padding-right: 7%;
+    }
+
+    .container-filter .filter {
+        width: 40px;
+        height: 38%;
+        font-size: 7px;
+    }
+
+    .drop-down-category.rap {
+        display: block;
+    }
+
+    .filter.rap {
+        display: none;
+    }
+
+    .view-all .viewAll {
+        width: 100%;
+        height: 40%;
+        font-size: 7px;
+        padding: 0;
+    }
+
+    .short-gallery {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        /* background-color: red; */
+        margin-top: 130px;
+    }
+
+    .gallery-songs {
+        padding: 0 2%;
+        margin-top: 3%;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, minmax(calc(50% - 20px), calc(50% - 10px)));
+        gap: 10px;
+    }
+
+    .content-item .control .view ion-icon {
+        font-size: 6px;
+        font-weight: 300;
+        color: #fff;
+    }
+
+    .share-song .bulat {
+        background-color: #43464e;
+        font-size: 9px;
+        color: rgba(255, 255, 255, 0.795);
+    }
+
+    .content-item h4 {
+        font-size: 7px;
+        color: rgba(255, 255, 255, 0.750);
+        font-weight: 450;
+        /* background-color: burlywood; */
+        height: 20%;
+    }
+
+    .content-item h3 {
+        font-size: 8px;
+        color: #fff;
+        font-weight: 500;
+        /* background-color: cyan; */
+        height: 30%;
+        margin: 2% 0 4% 0
+    }
+}
+
+@media (max-width:320px) {
+
+    /* filter */
+    .container-filter .filter-list {
+        padding-right: 7%;
+    }
+
+    .container-filter .filter {
+        width: 35px;
+        height: 35%;
+        font-size: 7px;
+    }
+
+    .view-all .viewAll {
+        width: 100%;
+        height: 35%;
+        font-size: 6px;
+        padding: 0;
     }
 }
