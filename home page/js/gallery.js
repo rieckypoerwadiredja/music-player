@@ -49,7 +49,7 @@ let songs = [
 
     {
         name: "Face Off",
-        image: "./images/imgGallery/Face Off.jpg",
+        image: "./images/imgGallery/Face off.jpg",
         song: "./song/Face Off.mp3",
         linkOri: "https://youtu.be/sH0gzen3z4k",
         price: "1,580",
