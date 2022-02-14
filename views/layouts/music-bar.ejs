@@ -1,0 +1,34 @@
+<section class="music-bar">
+    <div class="music-bar-btn">
+        <ion-icon name="chevron-down-outline"></ion-icon>
+    </div>
+    <div class="song-playing">
+        <img class="img-song-player" src="./images/imgSec/song popular 1.jpg" alt="">
+        <div class="font">
+            <h4 class="popular-title">Discover</h4>
+            <p class="popular-name">Arwicial Vibes</p>
+        </div>
+        <i class="far fa-heart"></i>
+    </div>
+
+    <div class="music-proses">
+        <div class="control-pro top-control">
+            <ion-icon id="shuffle" class="control-tengah" name="shuffle-outline"></ion-icon>
+            <i id="preview" class="fas fa-step-backward"></i>
+            <div id="playPouse" class="play-pouse"><i class="fas fa-play"></i></div>
+            <i id="next" class="fas fa-step-forward"></i>
+            <ion-icon id="repeat" class="control-tengah" name="repeat-outline"></ion-icon>
+        </div>
+        <div class="control-pro bottom-control">
+            <span class="curent-time-song">00:00</span>
+            <input class="range-song" type="range" min="0" max="100" step="1" value="0" id="song-range">
+            <span class="duration-song">00:00</span>
+        </div>
+        <audio class="audioMusicBar" src="" hidden></audio>
+    </div>
+    <div class="music-control">
+        <ion-icon name="mic-outline"></ion-icon>
+        <ion-icon name="volume-high-outline"></ion-icon>
+        <input class="volume-song" type="range" id="volume-song" value="100" min="0" max="100">
+    </div>
+</section>

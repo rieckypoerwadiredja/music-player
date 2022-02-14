@@ -1,0 +1,328 @@
+footer {
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    background-color: #242731;
+    padding-bottom: 90px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------------TOP FOOTER------------------------ */
+.top-footer {
+    /* background-color: yellow; */
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+
+.column-footer {
+    position: relative;
+    width: calc(100%/4);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: chocolate; */
+    color: #fff;
+    padding: 3% 0;
+}
+
+.column-footer:nth-child(1),
+.column-footer:nth-child(3) {
+    width: calc((100% / 4 / 2 + 100% / 4));
+}
+
+.column-footer:nth-child(2) {
+    padding-left: 8%;
+    justify-content: center;
+}
+
+.column-footer .logo {
+    font-family: 'Viga',
+        sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.column-footer p {
+    font-size: 11px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.column-footer a {
+    font-size: 11px;
+    margin: 3px 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.column-footer a:hover {
+    text-decoration: underline;
+}
+
+.column-footer form {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.column-footer .input-join {
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    outline: none;
+    border: 3px solid rgb(37, 37, 37);
+    padding: 3%;
+    font-weight: 500;
+    color: #000;
+}
+
+.column-footer .btn-join {
+    width: 18%;
+    height: 85%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 11px;
+    font-weight: 600;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    -webkit-box-shadow: 10px 9px 18px -7px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 10px 9px 18px -7px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 9px 18px -7px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(to bottom right, #df7f9f, #fe4785, #fe4785);
+}
+
+/* ------------------------------- FOOTER BAWAH ------------------- */
+
+.bottom-footer {
+    /* background-color: green; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-footer a i {
+    color: #fff;
+    font-size: 15px;
+    transition: .3s;
+
+}
+
+.bottom-footer .sosmed {
+    position: relative;
+    width: 10%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-footer .bot {
+    position: relative;
+    width: 10%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-footer .bot a {
+    font-size: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+
+}
+
+.bottom-footer a:hover i,
+.bottom-footer a:hover {
+    color: #fe4785;
+    transition: .3s;
+}
+
+/* ------------------------ RESPONSIVE WEB ------------------------ */
+
+@media (max-width:850px) {
+    .bottom-footer .bot {
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    footer {
+        height: 250px;
+    }
+
+
+
+    .column-footer p,
+    .column-footer a {
+        font-size: 9px;
+    }
+
+    .column-footer form {
+        height: 35%;
+    }
+
+    .column-footer .btn-join {
+        font-size: 10px;
+    }
+
+    .bottom-footer .bot a {
+        font-size: 8px;
+    }
+
+    .bottom-footer a i {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:650px) {
+    .top-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column-footer:nth-child(1),
+    .column-footer:nth-child(3) {
+        width: 45%;
+    }
+
+    .column-footer:nth-child(2) {
+        display: none;
+    }
+
+    .column-footer .btn-join {
+        width: 20%;
+        margin-left: 5%;
+    }
+
+    .column-footer form {
+        height: 30%;
+    }
+}
+
+@media (max-width:550px) {
+    footer {
+        height: 230px;
+    }
+
+    .column-footer p,
+    .column-footer a {
+        font-size: 8px;
+    }
+
+    .bottom-footer .bot a {
+        font-size: 7px;
+    }
+
+    .bottom-footer a i {
+        font-size: 10px;
+    }
+
+    .column-footer .logo {
+        font-size: 14px;
+        margin-bottom: 13px;
+    }
+
+    .column-footer .btn-join {
+        font-size: 8px;
+        width: 20%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width:425px) {
+    footer {
+        height: 350px;
+        padding: 0;
+    }
+
+    .column-footer p,
+    .column-footer a {
+        font-size: 7px;
+        text-align: center;
+    }
+
+    .bottom-footer .bot a {
+        font-size: 7px;
+    }
+
+    .bottom-footer a i {
+        font-size: 10px;
+    }
+
+    .top-footer {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+
+        /* background-color: red; */
+    }
+
+    .column-footer:nth-child(1),
+    .column-footer:nth-child(2),
+    .column-footer:nth-child(3) {
+        width: 100%;
+        height: calc(100%/3);
+        align-items: center;
+        padding: 0 25%;
+        text-align: center;
+    }
+
+    .column-footer:nth-child(2) {
+        display: flex;
+        padding: 0;
+    }
+
+    .bottom-footer {
+        height: 10%;
+        display: flex;
+        /* background-color: blue; */
+        justify-content: flex-end;
+    }
+
+    .bottom-footer .sosmed {
+        width: 15%;
+    }
+}
+
+@media (max-width:375px) {
+
+    .column-footer:nth-child(1),
+    .column-footer:nth-child(2),
+    .column-footer:nth-child(3) {
+        padding: 0 15%;
+    }
+}
+
+@media (max-width:320px) {
+
+    .column-footer:nth-child(1),
+    .column-footer:nth-child(2),
+    .column-footer:nth-child(3) {
+        padding: 0 8%;
+    }
+}

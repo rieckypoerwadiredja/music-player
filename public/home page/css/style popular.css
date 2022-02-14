@@ -1,0 +1,756 @@
+.popular-song {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.cards-populer-mob {
+    display: none;
+}
+
+/* -------------------------
+              garis 
+----------------------------*/
+.popular-song::before {
+    content: '';
+    position: absolute;
+    top: -14.8%;
+    right: 3%;
+    width: 60px;
+    height: 130%;
+    border-top: 2px solid #565658;
+    border-bottom: 2px solid #565658;
+    border-right: 2px solid #565658;
+    border-radius: 0 10px 10px 0;
+    background-color: transparent;
+}
+
+
+/* -------------------------
+             Description
+---------------------------- */
+
+
+.popular-song .font-popular {
+    position: relative;
+    width: 100%;
+    height: 35%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25%;
+    text-align: center;
+}
+
+.popular-song .font-popular p {
+    margin-top: 10px;
+}
+
+.title-h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #fdfdfd;
+}
+
+.desc-p {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.801);
+}
+
+/* ---------------------------------
+               Galery popular song
+------------------------------------*/
+.popular-song .song-pupolar {
+    position: relative;
+    width: 100%;
+    height: 65%;
+    padding: 0 5%;
+    /* background-color: royalblue; */
+}
+
+/* atas */
+.song-pupolar h1 {
+    position: relative;
+    height: 20% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: saddlebrown; */
+}
+
+/* bawah */
+.song-pupolar .cards-popular {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    /* background-color: salmon; */
+}
+
+.title-side-h1 {
+    font-size: 20px;
+    font-weight: 550;
+    color: #fdfdfd;
+}
+
+.song-pupolar .card-popular {
+    position: relative;
+    width: calc(85%/3);
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: 7px 11px 18px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 11px 18px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 11px 18px -8px rgba(0, 0, 0, 0.75);
+}
+
+.card-popular img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* -------------------------
+               cover 
+----------------------------*/
+.card-popular .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+}
+
+.card-popular .play-button {
+    position: absolute;
+    z-index: 10;
+    bottom: 12%;
+    right: 10%;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-box-shadow: 2px 7px 17px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 7px 17px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 7px 17px 1px rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    transform: translateY(20px) scale(1);
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+.card-popular:hover .play-button {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: .3s;
+}
+
+.play-button:hover {
+    transform: scale(1.1) !important;
+}
+
+.card-popular .play-button i {
+    font-size: 40px;
+    color: #fe4785;
+    position: absolute;
+    z-index: 10;
+    bottom: -3%;
+    right: -3%;
+}
+
+.cover .duration {
+    /* background-color: brown; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.cover .duration p {
+    font-size: 12px;
+    color: #fdfdfdd5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    /* background-color: red; */
+}
+
+.cover .profile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    /* background-color: brown; */
+    z-index: 10;
+    padding-left: 5%;
+
+}
+
+.cover .profile h4 {
+    width: 100%;
+    height: 30%;
+    padding-left: 5%;
+    color: #fdfdfdd5;
+
+    /* background-color: red; */
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.cover .profile .img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    margin-top: 5%;
+    /* background-color: burlywood; */
+}
+
+.cover .profile .img img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    /* background-color: red; */
+}
+
+.cover .profile .img p {
+    font-size: 11px;
+    font-weight: 500;
+    color: #fdfdfdd5;
+}
+
+/* style tombol klik*/
+.top-control .control-tengah.active {
+    color: #fe4785;
+}
+
+
+
+@media (max-width:850px) {
+    .popular-song .song-pupolar {
+        padding: 0 3%;
+    }
+
+    .popular-song {
+        height: 570px;
+    }
+
+    .popular-song::before {
+        top: -15.6%;
+    }
+}
+
+@media (max-width:800px) {
+    .card-title {
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .popular-song {
+        height: 550px;
+        margin-top: 80px;
+    }
+
+    .title-h1 {
+        font-size: 25px;
+    }
+
+    .desc-p {
+        font-size: 10px;
+    }
+
+    .title-side-h1 {
+        font-size: 18px;
+    }
+
+    .cover .duration p {
+        font-size: 10px;
+    }
+
+    .cover .profile h4 {
+        font-size: 14px;
+    }
+
+    .cover .profile .img p {
+        font-size: 9px;
+    }
+
+    .cover .profile .img img {
+        width: 20px;
+        height: 20px;
+        margin-right: 7px;
+    }
+
+    .popular-song::before {
+        top: -16.2%;
+        right: 2.8%;
+        width: 60px;
+        height: 130%;
+    }
+
+    .song-pupolar .card-popular {
+        width: calc(90%/3);
+
+    }
+}
+
+@media (max-width:700px) {
+    .popular-song {
+        height: 520px;
+    }
+
+    .popular-song::before {
+        top: -17.2%;
+        right: 2.8%;
+        width: 60px;
+        height: 130%;
+    }
+}
+
+@media (max-width:650px) {
+    .popular-song {
+        height: 460px;
+    }
+
+    .popular-song::before {
+        top: -20%;
+        right: 2.8%;
+        width: 60px;
+        height: 130%;
+    }
+
+    .title-h1 {
+        font-size: 20px;
+    }
+
+    .desc-p {
+        font-size: 9px;
+    }
+
+    .title-side-h1 {
+        font-size: 16px;
+    }
+
+    .cover .duration p {
+        font-size: 9px;
+    }
+
+    .cover .profile h4 {
+        font-size: 13px;
+    }
+
+    .cover .profile .img p {
+        font-size: 9px;
+    }
+
+    .card-popular .play-button {
+        bottom: 12%;
+        right: 11%;
+        width: 25px;
+        height: 25px;
+        transform: translateY(20px) scale(1);
+    }
+
+    .card-popular .play-button i {
+        font-size: 30px;
+        z-index: 10;
+        bottom: -3%;
+        right: -3%;
+    }
+
+    .popular-song::before {
+        top: -21.8%;
+        right: 2.8%;
+        width: 60px;
+        height: 130%;
+    }
+}
+
+@media (max-width:600px) {
+    .popular-song .song-pupolar {
+        padding: 0;
+    }
+
+    .popular-song::before {
+        top: -17.2%;
+        right: 2.8%;
+        width: 60px;
+        height: 130%;
+    }
+}
+
+@media (max-width:550px) {
+    .popular-song {
+        height: 430px;
+    }
+
+    .title-h1 {
+        font-size: 18px;
+    }
+
+    .desc-p {
+        font-size: 8px;
+    }
+
+    .title-side-h1 {
+        font-size: 14px;
+    }
+
+    .cover .duration p {
+        font-size: 8px;
+    }
+
+    .cover .profile h4 {
+        font-size: 11px;
+    }
+
+    .cover .profile .img p {
+        font-size: 8px;
+    }
+
+    .cover .profile .img img {
+        width: 17px;
+        height: 17px;
+        margin-right: 4px;
+    }
+
+    .popular-song .font-popular {
+        padding: 0 24%;
+    }
+
+    .popular-song::before {
+        top: -12.2%;
+        right: 2.8%;
+        width: 60px;
+        height: 130%;
+    }
+
+    .card-popular .play-button {
+        bottom: 12%;
+        right: 10%;
+        width: 25px;
+        height: 25px;
+        transform: translateY(20px) scale(1);
+    }
+}
+
+@media (max-width:500px) {
+    .popular-song {
+        height: 400px;
+    }
+
+    .title-h1 {
+        font-size: 15px;
+    }
+
+    .desc-p {
+        font-size: 7px;
+    }
+
+    .title-side-h1 {
+        font-size: 13px;
+    }
+
+    .cover .duration p {
+        font-size: 8px;
+    }
+
+    .cover .profile h4 {
+        font-size: 10px;
+    }
+
+    .cover .profile .img p {
+        font-size: 7px;
+    }
+
+    .card-popular .play-button {
+        bottom: 12%;
+        right: 12%;
+        width: 20px;
+        height: 20px;
+        transform: translateY(20px) scale(1);
+    }
+
+    .card-popular .play-button i {
+        font-size: 25px;
+        z-index: 10;
+        bottom: -3%;
+        right: -3%;
+    }
+
+    .popular-song::before {
+        top: -14%;
+        right: 2.8%;
+        width: 60px;
+        height: 130%;
+    }
+}
+
+@media (max-width:450px) {
+    .popular-song {
+        height: 380px;
+    }
+
+    .popular-song {
+        margin-top: 50px;
+    }
+
+    .popular-song::before {
+        top: -18%;
+        right: 2.8%;
+        width: 60px;
+        height: 130%;
+    }
+
+    .cover .duration p {
+        font-size: 7px;
+    }
+
+    .cover .profile h4 {
+        font-size: 9px;
+    }
+
+    .cover .profile .img p {
+        font-size: 7px;
+    }
+}
+
+@media (max-width:425px) {
+    .popular-song .font-popular {
+        height: 30%;
+    }
+
+    .popular-song .song-pupolar {
+        height: 70%;
+    }
+
+    .popular-song {
+        height: 500px;
+        margin-top: 40px;
+    }
+
+    .card-popular {
+        display: none;
+    }
+
+    .song-pupolar .cards-populer-mob {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 80%;
+        /* background-color: blue; */
+        padding: 0 5%;
+    }
+
+    .card-populer-mob {
+        position: relative;
+        width: 100%;
+        height: calc(90%/3);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #393645;
+        padding: 10% 5%;
+        border-radius: 15px;
+        -webkit-box-shadow: 0px 9px 23px -8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 9px 23px -8px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 9px 23px -8px rgba(0, 0, 0, 0.75);
+    }
+
+    .card-populer-mob img {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        margin-right: 3px;
+        border-radius: 10px;
+    }
+
+    .card-font-mob {
+        position: relative;
+        width: 60%;
+    }
+
+    .card-font-mob h4 {
+        font-size: 13px;
+        color: #fdfdfd;
+    }
+
+    .card-font-mob p {
+        font-size: 10px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.801);
+    }
+
+    .card-populer-mob i {
+        font-size: 16px;
+        color: #FCB263;
+    }
+
+    .popular-song::before {
+        top: -14.5%;
+        right: 2.8%;
+        width: 60px;
+        height: 130%;
+    }
+
+    .popular-song .font-popular {
+        padding: 0 19%;
+    }
+
+    /* btn play */
+    .card-populer-mob .fa-play {
+        font-size: 20px;
+        position: absolute;
+        top: calc(60% - 20px);
+        right: 16%;
+        opacity: 0;
+        transform: scale(0);
+        transition: .3s;
+    }
+
+    .card-populer-mob:hover .fa-play {
+        opacity: 1;
+        transform: scale(1);
+        transition: .3s;
+    }
+}
+
+@media (max-width:375px) {
+    .popular-song .font-popular {
+        height: 30%;
+    }
+
+    .popular-song .song-pupolar {
+        height: 70%;
+    }
+
+    .popular-song {
+        height: 450px;
+        margin-top: 40px;
+    }
+
+    .card-populer-mob img {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-right: 3px;
+        border-radius: 10px;
+    }
+
+    .card-populer-mob i {
+        font-size: 14px;
+        color: #FCB263;
+    }
+
+    .card-font-mob h4 {
+        font-size: 12px;
+        color: #fdfdfd;
+    }
+
+    .card-font-mob p {
+        font-size: 9px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.801);
+    }
+
+    .popular-song::before {
+        top: -13.8%;
+        right: 2.8%;
+        width: 60px;
+        height: 130%;
+    }
+}
+
+@media (max-width:320px) {
+    .popular-song .font-popular {
+        padding: 0 10%;
+    }
+
+    .popular-song {
+        height: 420px;
+        margin-top: 40px;
+    }
+
+    .card-populer-mob img {
+        position: relative;
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+        margin-right: 3px;
+        border-radius: 10px;
+    }
+
+    .card-populer-mob i {
+        font-size: 10px;
+        color: #FCB263;
+    }
+
+    .card-font-mob h4 {
+        font-size: 10px;
+        color: #fdfdfd;
+    }
+
+    .card-font-mob p {
+        font-size: 8px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.801);
+    }
+
+    .popular-song::before {
+        top: -12.5%;
+        right: 2.8%;
+        width: 60px;
+        height: 130%;
+    }
+}
+
+@media (max-width:280px) {
+    .card-populer-mob i {
+        font-size: 9px;
+        color: #FCB263;
+    }
+
+    .card-font-mob h4 {
+        font-size: 9px;
+        color: #fdfdfd;
+    }
+
+    .card-font-mob p {
+        font-size: 7px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.801);
+    }
+
+}
