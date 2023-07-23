@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "AirMusic Server",
   "main": "index.js",
+   "engines": {
+    "node": "16.X"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
